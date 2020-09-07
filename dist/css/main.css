@@ -185,3 +185,45 @@ img {
         color: #F05033; }
       .experience .container .icons .icon .fa-adobe {
         color: #FF61F6; }
+
+.projects {
+  padding: 2rem 0;
+  background: #47A498; }
+  .projects .container .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2rem; }
+    .projects .container .projects .project {
+      background: #fff; }
+      .projects .container .projects .project .text-container {
+        padding: 1rem;
+        background: #fff;
+        margin: 0; }
+        .projects .container .projects .project .text-container .title {
+          font-size: 3rem; }
+        .projects .container .projects .project .text-container .details {
+          list-style: disc;
+          margin-left: 2rem;
+          padding: 1rem 0; }
+        .projects .container .projects .project .text-container .btn {
+          font-size: 1.7rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          padding: 1rem 3.5rem;
+          display: inline-flex;
+          align-items: center;
+          border-radius: 10px;
+          transition: all .2s ease-in-out; }
+        .projects .container .projects .project .text-container .btn-primary {
+          background: #47A498;
+          border: 2px solid #47A498;
+          color: #fff; }
+          .projects .container .projects .project .text-container .btn-primary:hover {
+            background: #12CFC2;
+            border: 2px solid #12CFC2; }
+        .projects .container .projects .project .text-container .btn-secondary {
+          border: 2px solid #47A498;
+          color: #47A498; }
+          .projects .container .projects .project .text-container .btn-secondary:hover {
+            border: 2px solid #12CFC2;
+            color: #12CFC2; }

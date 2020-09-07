@@ -249,3 +249,74 @@
     }
   }
 }
+
+// Projects Section 
+.projects {
+  padding: 2rem 0;
+  background: $primary-color;
+
+  .container {
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      grid-gap: 2rem;
+
+      .project {
+        background: #fff;
+
+        .img-container {
+          img {}
+        }
+
+        .text-container {
+          padding: 1rem;
+          background: #fff;
+          margin: 0;
+
+          .title {
+            font-size: 3rem;
+          }
+
+          .details {
+            list-style: disc;
+            margin-left: 2rem;
+            padding: 1rem 0;
+          }
+
+          .btn {
+            font-size: 1.7rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 1rem 3.5rem;
+            display: inline-flex;
+            align-items: center;
+            border-radius: 10px;
+            transition: all .2s ease-in-out;
+          }
+
+          .btn-primary {
+            background: $primary-color;
+            border: 2px solid $primary-color;
+            color: #fff;
+
+            &:hover {
+              background: $primary-light-color;
+              border: 2px solid $primary-light-color;
+
+            }
+          }
+
+          .btn-secondary {
+            border: 2px solid $primary-color;
+            color: $primary-color;
+
+            &:hover {
+              border: 2px solid $primary-light-color;
+              color: $primary-light-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
