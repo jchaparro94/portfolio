@@ -55,3 +55,23 @@ img {
   padding: 0 1.5rem;
   margin: 0 auto;
 }
+
+.about-heading {
+  padding: 2rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+  .heading {
+    font-size: 3.5rem;
+  }
+
+  .heading-underline {
+    height: .2rem;
+    width: 4rem;
+    background: #fff;
+  }
+}

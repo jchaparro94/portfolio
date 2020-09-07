@@ -29,6 +29,21 @@ img {
   padding: 0 1.5rem;
   margin: 0 auto; }
 
+.about-heading {
+  padding: 2rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff; }
+  .about-heading .heading {
+    font-size: 3.5rem; }
+  .about-heading .heading-underline {
+    height: .2rem;
+    width: 4rem;
+    background: #fff; }
+
 .showcase {
   position: relative;
   height: 100vh;
@@ -133,3 +148,40 @@ img {
       transition: color .2s ease-in; }
       .showcase .content .social .icon:hover {
         color: #47A498; }
+
+.about {
+  padding: 2rem 0;
+  background-color: #47A498; }
+  .about .container .about-info {
+    color: #fff;
+    text-align: center;
+    line-height: 2.1; }
+    .about .container .about-info p {
+      padding: 1rem 0; }
+
+.experience {
+  padding: 1rem 0; }
+  .experience .container .about-heading {
+    color: #585353; }
+    .experience .container .about-heading .heading-underline {
+      background: #585353; }
+  .experience .container .icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2.5rem; }
+    .experience .container .icons .icon {
+      text-align: center; }
+      .experience .container .icons .icon span {
+        font-size: 4rem; }
+      .experience .container .icons .icon .fa-html5 {
+        color: #E44E26; }
+      .experience .container .icons .icon .fa-css3-alt {
+        color: #379AD6; }
+      .experience .container .icons .icon .fa-sass {
+        color: #CE6699; }
+      .experience .container .icons .icon .fa-js {
+        color: #EFDC4F; }
+      .experience .container .icons .icon .fa-git-alt {
+        color: #F05033; }
+      .experience .container .icons .icon .fa-adobe {
+        color: #FF61F6; }

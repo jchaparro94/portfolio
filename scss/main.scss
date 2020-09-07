@@ -155,3 +155,97 @@
     }
   }
 }
+
+// About Section 
+.about {
+  padding: 2rem 0;
+  background-color: $primary-color;
+
+  .container {
+    .about-info {
+      color: #fff;
+      text-align: center;
+      line-height: 2.1;
+
+      p {
+        padding: 1rem 0;
+      }
+    }
+
+    // .about-boxes {
+    //   display: grid;
+    //   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    //   grid-gap: 2.5rem;
+
+    //   .box {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: center;
+    //     padding: 3rem;
+    //     background-color: #fff;
+    //     color: $grey-dark-color;
+
+    //     span {
+    //       .fa-circle {
+    //         background: #fff;
+    //         border: 2px solid $grey-dark-color;
+    //       }
+    //     }
+    //   }
+    // }
+  }
+}
+
+// Experience Section 
+.experience {
+  padding: 1rem 0;
+
+  .container {
+    .about-heading {
+      color: $grey-dark-color;
+
+      .heading-underline {
+        background: $grey-dark-color;
+      }
+    }
+
+    .icons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      grid-gap: 2.5rem;
+
+      .icon {
+        text-align: center;
+
+        span {
+          font-size: 4rem;
+        }
+
+        .fa-html5 {
+          color: $html-logo;
+        }
+
+        .fa-css3-alt {
+          color: $css-logo;
+        }
+
+        .fa-sass {
+          color: $sass-logo;
+        }
+
+        .fa-js {
+          color: $js-logo;
+        }
+
+        .fa-git-alt {
+          color: $git-logo;
+        }
+
+        .fa-adobe {
+          color: $adobeXD-logo;
+        }
+      }
+    }
+  }
+}
