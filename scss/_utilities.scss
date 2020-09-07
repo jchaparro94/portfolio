@@ -1,0 +1,57 @@
+// Variables
+$primary-color: #47A498;
+$primary-light-color: #12CFC2;
+$grey-light-color: #707070;
+$grey-dark-color: #585353;
+$html-logo: #E44E26;
+$css-logo: #379AD6;
+$sass-logo: #CE6699;
+$js-logo: #EFDC4F;
+$git-logo: #F05033;
+$adobeXD-logo: #FF61F6;
+
+// Basic Reset
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+// Global Style 
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+// section {
+//   padding: 5rem 0;
+// }
+
+img {
+  width: 100%;
+}
+
+// Reusable styles
+.container {
+  width: 100%;
+  max-width: 120rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
