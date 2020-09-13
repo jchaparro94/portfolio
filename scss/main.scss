@@ -45,7 +45,7 @@
   .top-menu {
     z-index: 10;
     width: 100%;
-    top: 1rem;
+    top: 2rem;
     height: 6rem;
     position: fixed;
 
@@ -199,7 +199,7 @@
 
 // Experience Section 
 .experience {
-  padding: 1rem 0;
+  padding: 2rem 0;
 
   .container {
     .about-heading {
@@ -244,6 +244,10 @@
 
         .fa-adobe {
           color: $adobeXD-logo;
+        }
+
+        .fa-node-js {
+          color: $nodejs-logo;
         }
       }
     }
@@ -375,10 +379,14 @@
           outline: none;
         }
       }
+
+      .span-filter {
+        padding: 2rem 0;
+      }
     }
 
     button[type="submit"] {
-      width: 50%;
+      width: 25%;
       padding: .5rem 0;
       font-size: 1.4rem;
       background: $primary-color;
@@ -410,6 +418,7 @@
       .fab {
         margin-right: .5rem;
         font-size: 2rem;
+        cursor: pointer;
         transition: all .2s ease-in-out;
 
         &:hover {
@@ -419,3 +428,5 @@
     }
   }
 }
+
+@import 'media';

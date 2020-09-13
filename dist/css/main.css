@@ -81,7 +81,7 @@ img {
   .showcase .top-menu {
     z-index: 10;
     width: 100%;
-    top: 1rem;
+    top: 2rem;
     height: 6rem;
     position: fixed; }
     .showcase .top-menu .container .nav {
@@ -160,7 +160,7 @@ img {
       padding: 1rem 0; }
 
 .experience {
-  padding: 1rem 0; }
+  padding: 2rem 0; }
   .experience .container .about-heading {
     color: #585353; }
     .experience .container .about-heading .heading-underline {
@@ -185,6 +185,8 @@ img {
         color: #F05033; }
       .experience .container .icons .icon .fa-adobe {
         color: #FF61F6; }
+      .experience .container .icons .icon .fa-node-js {
+        color: #529842; }
 
 .projects {
   padding: 2rem 0;
@@ -255,8 +257,10 @@ img {
       padding: 0.5rem 1.5rem; }
       .contact .container .text-fields .text-input:focus {
         outline: none; }
+    .contact .container .text-fields .span-filter {
+      padding: 2rem 0; }
   .contact .container button[type="submit"] {
-    width: 50%;
+    width: 25%;
     padding: .5rem 0;
     font-size: 1.4rem;
     background: #47A498;
@@ -279,6 +283,25 @@ img {
     .main-footer .footer-content .social .fab {
       margin-right: .5rem;
       font-size: 2rem;
+      cursor: pointer;
       transition: all .2s ease-in-out; }
       .main-footer .footer-content .social .fab:hover {
         color: #585353; }
+
+@media screen and (min-width: 768px) {
+  .showcase .content h1 {
+    font-size: 6rem; }
+  .showcase .content h3 {
+    font-size: 3rem; }
+  .showcase .content .social .icon {
+    font-size: 2.5rem; } }
+
+@media screen and (min-width: 1000px) {
+  .showcase .content h1 {
+    font-size: 8rem; }
+  .showcase .content h3 {
+    font-size: 4rem; }
+  .showcase .content .social .icon {
+    font-size: 3.5rem; }
+  .contact .container .text-fields {
+    grid-template-areas: 'name subject' 'email phone' 'message message'; } }
