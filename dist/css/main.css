@@ -45,6 +45,7 @@ img {
     background: #fff; }
 
 .showcase {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/bg.jpg") no-repeat center center/cover;
   position: relative;
   height: 100vh;
   display: flex;
@@ -63,7 +64,7 @@ img {
     overflow: hidden;
     background: #3a4052; }
     .showcase .video-container:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -124,7 +125,7 @@ img {
           opacity: 1;
           transform: scale(1); }
       .showcase .top-menu .container .nav .nav-item:not(last-child) {
-        margin-bottom: .5rem; }
+        margin-bottom: 0.5rem; }
       .showcase .top-menu .container .nav .nav-item .nav-link {
         display: block;
         color: #fff;
@@ -133,7 +134,7 @@ img {
         text-transform: uppercase;
         letter-spacing: 2px;
         padding: 1rem;
-        transition: all .2s ease-in; }
+        transition: all 0.2s ease-in; }
         .showcase .top-menu .container .nav .nav-item .nav-link:hover {
           transform: scale(1.5); }
   .showcase .content {
@@ -144,8 +145,8 @@ img {
       font-size: 2.5rem; }
     .showcase .content .social .icon {
       font-size: 2rem;
-      margin-right: .5rem;
-      transition: color .2s ease-in; }
+      margin-right: 0.5rem;
+      transition: color 0.2s ease-in; }
       .showcase .content .social .icon:hover {
         color: #47A498; }
 
@@ -199,7 +200,7 @@ img {
       background: #fff;
       border-radius: 5px; }
       .projects .container .projects .project .img-container img {
-        height: auto; }
+        height: 240px; }
       .projects .container .projects .project .text-container {
         padding: 1rem;
         background: #fff;
@@ -218,7 +219,7 @@ img {
           display: inline-flex;
           align-items: center;
           border-radius: 10px;
-          transition: all .2s ease-in-out; }
+          transition: all 0.2s ease-in-out; }
         .projects .container .projects .project .text-container .btn-primary {
           background: #47A498;
           border: 2px solid #47A498;
@@ -241,7 +242,7 @@ img {
       background: #585353; }
   .contact .container .text-fields {
     display: grid;
-    grid-template-areas: 'name' 'subject' 'email' 'phone' 'message';
+    grid-template-areas: "name" "subject" "email" "phone" "message";
     grid-gap: 2rem;
     margin-bottom: 2rem; }
     .contact .container .text-fields .name-input {
@@ -263,13 +264,13 @@ img {
       padding: 2rem 0; }
   .contact .container button[type="submit"] {
     width: 25%;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
     font-size: 1.4rem;
     background: #47A498;
     border: none;
     color: #fff;
     cursor: pointer;
-    transition: all .2s ease-in-out; }
+    transition: all 0.2s ease-in-out; }
     .contact .container button[type="submit"]:hover {
       background: #12CFC2; }
 
@@ -283,10 +284,10 @@ img {
     justify-content: space-between;
     align-items: center; }
     .main-footer .footer-content .social .fab {
-      margin-right: .5rem;
+      margin-right: 0.5rem;
       font-size: 2rem;
       cursor: pointer;
-      transition: all .2s ease-in-out; }
+      transition: all 0.2s ease-in-out; }
       .main-footer .footer-content .social .fab:hover {
         color: #585353; }
 
