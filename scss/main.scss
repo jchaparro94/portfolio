@@ -263,6 +263,7 @@
 
       .project {
         background: #fff;
+        border-radius: 5px;
 
         .img-container {
           img {}
@@ -315,6 +316,104 @@
               color: $primary-light-color;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+// Contact 
+.contact {
+  padding-bottom: 2rem;
+
+  .container {
+    .about-heading {
+      color: $grey-dark-color;
+
+      .heading-underline {
+        background: $grey-dark-color;
+      }
+    }
+
+    .text-fields {
+      display: grid;
+      grid-template-areas:
+        'name'
+        'subject'
+        'email'
+        'phone'
+        'message';
+      grid-gap: 2rem;
+      margin-bottom: 2rem;
+
+      // grid areas
+      .name-input {
+        grid-area: name;
+      }
+
+      .email-input {
+        grid-area: email;
+      }
+
+      .subject-input {
+        grid-area: subject;
+      }
+
+      .phone-input {
+        grid-area: phone;
+      }
+
+      .message-input {
+        grid-area: message;
+        height: 10rem;
+      }
+
+      .text-input {
+        padding: 0.5rem 1.5rem;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    button[type="submit"] {
+      width: 50%;
+      padding: .5rem 0;
+      font-size: 1.4rem;
+      background: $primary-color;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        background: $primary-light-color;
+      }
+    }
+  }
+}
+
+// Footer 
+.main-footer {
+  padding: 2rem 0;
+  height: 8rem;
+  background: $primary-color;
+  color: #fff;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .social {
+      .fab {
+        margin-right: .5rem;
+        font-size: 2rem;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+          color: $grey-dark-color;
         }
       }
     }

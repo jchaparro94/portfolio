@@ -194,7 +194,8 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 2rem; }
     .projects .container .projects .project {
-      background: #fff; }
+      background: #fff;
+      border-radius: 5px; }
       .projects .container .projects .project .text-container {
         padding: 1rem;
         background: #fff;
@@ -227,3 +228,57 @@ img {
           .projects .container .projects .project .text-container .btn-secondary:hover {
             border: 2px solid #12CFC2;
             color: #12CFC2; }
+
+.contact {
+  padding-bottom: 2rem; }
+  .contact .container .about-heading {
+    color: #585353; }
+    .contact .container .about-heading .heading-underline {
+      background: #585353; }
+  .contact .container .text-fields {
+    display: grid;
+    grid-template-areas: 'name' 'subject' 'email' 'phone' 'message';
+    grid-gap: 2rem;
+    margin-bottom: 2rem; }
+    .contact .container .text-fields .name-input {
+      grid-area: name; }
+    .contact .container .text-fields .email-input {
+      grid-area: email; }
+    .contact .container .text-fields .subject-input {
+      grid-area: subject; }
+    .contact .container .text-fields .phone-input {
+      grid-area: phone; }
+    .contact .container .text-fields .message-input {
+      grid-area: message;
+      height: 10rem; }
+    .contact .container .text-fields .text-input {
+      padding: 0.5rem 1.5rem; }
+      .contact .container .text-fields .text-input:focus {
+        outline: none; }
+  .contact .container button[type="submit"] {
+    width: 50%;
+    padding: .5rem 0;
+    font-size: 1.4rem;
+    background: #47A498;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s ease-in-out; }
+    .contact .container button[type="submit"]:hover {
+      background: #12CFC2; }
+
+.main-footer {
+  padding: 2rem 0;
+  height: 8rem;
+  background: #47A498;
+  color: #fff; }
+  .main-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .main-footer .footer-content .social .fab {
+      margin-right: .5rem;
+      font-size: 2rem;
+      transition: all .2s ease-in-out; }
+      .main-footer .footer-content .social .fab:hover {
+        color: #585353; }
