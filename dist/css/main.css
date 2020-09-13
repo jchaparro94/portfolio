@@ -198,6 +198,8 @@ img {
     .projects .container .projects .project {
       background: #fff;
       border-radius: 5px; }
+      .projects .container .projects .project .img-container img {
+        height: auto; }
       .projects .container .projects .project .text-container {
         padding: 1rem;
         background: #fff;
