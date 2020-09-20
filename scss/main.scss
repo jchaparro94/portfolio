@@ -14,124 +14,6 @@
   padding: 0 2rem;
   color: #fff;
 
-  .video-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background: #3a4052;
-
-    &:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.6);
-    }
-
-    video {
-      min-width: 100%;
-      min-height: 100%;
-      object-fit: cover;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-
-  .top-menu {
-    z-index: 10;
-    width: 100%;
-    top: 2rem;
-    height: 6rem;
-    position: fixed;
-
-    .container {
-      .nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        .logo {
-          max-width: 80%;
-          color: #fff;
-        }
-
-        .hamburger-menu {
-          font-size: 2.6rem;
-          color: #fff;
-          cursor: pointer;
-          position: relative;
-          z-index: 1500;
-
-          .fa-bars {
-            display: block;
-
-            &.hide {
-              display: none;
-            }
-          }
-
-          .fa-times {
-            display: none;
-
-            &.show {
-              display: block;
-            }
-          }
-        }
-
-        .nav-list {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100vh;
-          background: $primary-color;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          z-index: 1400;
-          opacity: 0;
-          transform: scale(0);
-          transition: opacity 0.5s;
-
-          &.menu-open {
-            opacity: 1;
-            transform: scale(1);
-          }
-        }
-
-        .nav-item {
-          &:not(last-child) {
-            margin-bottom: 0.5rem;
-          }
-
-          .nav-link {
-            display: block;
-            color: #fff;
-            font-size: 3rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            padding: 1rem;
-            transition: all 0.2s ease-in;
-
-            &:hover {
-              transform: scale(1.5);
-            }
-          }
-        }
-      }
-    }
-  }
-
   .content {
     z-index: 9;
 
@@ -153,7 +35,7 @@
 
     .social {
       .icon {
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-right: 0.5rem;
         transition: color 0.2s ease-in;
 
@@ -168,54 +50,34 @@
 // About Section
 .about {
   padding: 2rem 0;
-  background-color: $primary-color;
+  background-color: $grey-main-color;
 
   .container {
     .about-info {
       color: #fff;
       text-align: center;
       line-height: 2.1;
+      background: #414141;
+      padding: 1rem;
 
       p {
         padding: 1rem 0;
       }
     }
-
-    // .about-boxes {
-    //   display: grid;
-    //   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    //   grid-gap: 2.5rem;
-
-    //   .box {
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     align-items: center;
-    //     padding: 3rem;
-    //     background-color: #fff;
-    //     color: $grey-dark-color;
-
-    //     span {
-    //       .fa-circle {
-    //         background: #fff;
-    //         border: 2px solid $grey-dark-color;
-    //       }
-    //     }
-    //   }
-    // }
   }
 }
 
 // Experience Section
 .experience {
   padding: 2rem 0;
+  background: $grey-main-color;
 
   .container {
     .about-heading {
-      color: $grey-dark-color;
+      color: #fff;
 
       .heading-underline {
-        background: $grey-dark-color;
+        background: #fff;
       }
     }
 
@@ -226,6 +88,10 @@
 
       .icon {
         text-align: center;
+
+        h3 {
+          color: #fff;
+        }
 
         span {
           font-size: 4rem;
@@ -263,74 +129,74 @@
   }
 }
 
-// Projects Section
+// Projects Page
 .projects {
-  padding: 2rem 0;
-  background: $primary-color;
+  // height: 100vh;
+  padding: 4rem 0;
+  background: $grey-main-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  .container {
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-      grid-gap: 2rem;
+  .project-heading {
+    text-align: center;
+    padding: 2rem 0;
 
-      .project {
-        background: #fff;
-        border-radius: 5px;
+    .heading {
+      font-size: 4rem;
+      color: #fff;
 
-        .img-container {
-          img {
-            height: 240px;
-          }
+      span {
+        color: $primary-color;
+      }
+    }
+
+    .heading-underline {
+      height: 2px;
+      background: #fff;
+      text-align: center;
+    }
+  }
+
+  .projects-container {
+    width: 100%;
+    max-width: 120rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2rem;
+
+
+    .project {
+      a {
+        img {
+          width: 100%;
+          height: 275px;
         }
+      }
 
-        .text-container {
-          padding: 1rem;
-          background: #fff;
-          margin: 0;
+      .btn {
+        display: block;
+        padding: .5rem 1rem;
+        text-align: center;
+        margin: .5rem 0;
+        transition: all 0.4s ease-in-out;
 
-          .title {
-            font-size: 3rem;
-          }
-
-          .details {
-            list-style: disc;
-            margin-left: 2rem;
-            padding: 1rem 0;
-          }
-
-          .btn {
-            font-size: 1.7rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            padding: 1rem 3.5rem;
-            display: inline-flex;
-            align-items: center;
-            border-radius: 10px;
-            transition: all 0.2s ease-in-out;
-          }
-
-          .btn-primary {
-            background: $primary-color;
-            border: 2px solid $primary-color;
-            color: #fff;
-
-            &:hover {
-              background: $primary-light-color;
-              border: 2px solid $primary-light-color;
-            }
-          }
-
-          .btn-secondary {
-            border: 2px solid $primary-color;
-            color: $primary-color;
-
-            &:hover {
-              border: 2px solid $primary-light-color;
-              color: $primary-light-color;
-            }
-          }
+        &:hover {
+          background: $primary-color;
         }
+      }
+
+      .btn-primary {
+        background: #B3B3B3;
+        color: #000;
+      }
+
+      .btn-secondary {
+        background: #000;
+        color: #fff;
       }
     }
   }
@@ -416,7 +282,7 @@
 .main-footer {
   padding: 2rem 0;
   height: 8rem;
-  background: $primary-color;
+  background: #000;
   color: #fff;
 
   .footer-content {
@@ -432,7 +298,7 @@
         transition: all 0.2s ease-in-out;
 
         &:hover {
-          color: $grey-dark-color;
+          color: $primary-color;
         }
       }
     }
