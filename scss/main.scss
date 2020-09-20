@@ -142,6 +142,9 @@
   .project-heading {
     text-align: center;
     padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .heading {
       font-size: 4rem;
@@ -156,6 +159,7 @@
       height: 2px;
       background: #fff;
       text-align: center;
+      width: 8rem;
     }
   }
 
@@ -204,16 +208,44 @@
 
 // Contact
 .contact {
-  padding-bottom: 2rem;
+  background: $grey-main-color;
+  // padding-bottom: 2rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
-  .container {
-    .about-heading {
-      color: $grey-dark-color;
+  .contact-heading {
+    text-align: center;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-      .heading-underline {
-        background: $grey-dark-color;
+    .heading {
+      font-size: 4rem;
+      color: #fff;
+
+      span {
+        color: $primary-color;
       }
     }
+
+    .heading-underline {
+      height: 2px;
+      background: #fff;
+      text-align: center;
+      width: 8rem;
+    }
+  }
+
+  form {
+    width: 100%;
+    max-width: 120rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
 
     .text-fields {
       display: grid;

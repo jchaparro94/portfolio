@@ -12,11 +12,11 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../css/main.css" />
-    <title>Jose Chaparro | Portfolio</title>
+    <title>Jose Chaparro | Contact</title>
   </head>
   <body>
     <!-- Showcase -->
-    <section class="showcase">
+    <section class="projects-section">
       <div class="top-menu">
         <div class="container">
           <nav class="nav">
@@ -29,11 +29,8 @@
             </div>
             <ul class="nav-list">
               <li class="nav-item">
-                <a href="./index.html" class="nav-link">Home</a>
+                <a href="../index.html" class="nav-link">Home</a>
               </li>
-              <!-- <li class="nav-item">
-                <a href="#about" class="nav-link">About</a>
-              </li> -->
               <li class="nav-item">
                 <a href="/dist/pages/projects.html" class="nav-link"
                   >Projects</a
@@ -56,28 +53,50 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <!-- <section class="contact" id="contact">
-        <div class="container">
-          <div class="about-heading">
-            <h1 class="heading">Contact Me</h1>
-            <p class="heading-underline"></p>
+    <section class="contact">
+      <div class="contact-heading">
+        <h1 class="heading">Contact <span>Me</span></h1>
+        <p class="heading-underline"></p>
+      </div>
+      <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+        <div class="text-fields">
+          <input
+            type="text"
+            class="text-input name-input"
+            placeholder="Name"
+            name="name"
+          />
+          <input
+            type="text"
+            class="text-input subject-input"
+            placeholder="Subject"
+            name="subject"
+          />
+          <input
+            type="email"
+            class="text-input email-input"
+            placeholder="Email Address"
+            name="email"
+          />
+          <input
+            type="text"
+            class="text-input phone-input"
+            placeholder="Phone Number"
+            name="phone"
+          />
+          <textarea
+            type="text"
+            class="text-input message-input"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <div class="span-filter">
+            <div data-netlify-recaptcha="true"></div>
           </div>
-          <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
-            <div class="text-fields">
-              <input type="text" class="text-input name-input" placeholder="Name" name="name">
-              <input type="text" class="text-input subject-input" placeholder="Subject" name="subject">
-              <input type="email" class="text-input email-input" placeholder="Email Address" name="email">
-              <input type="text" class="text-input phone-input" placeholder="Phone Number" name="phone">
-              <textarea type="text" class="text-input message-input" placeholder="Message" name="message"></textarea>
-              <div class="span-filter">
-                <div data-netlify-recaptcha="true"></div>
-              </div>
-            </div>
-            <button type="submit" class="btn">Submit</button>
-          </form>
         </div>
-      </section> -->
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
 
     <!-- Footer -->
     <footer class="main-footer" id="main-footer">
@@ -94,6 +113,6 @@
       </div>
     </footer>
 
-    <script src="./js/app.js"></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>

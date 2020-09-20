@@ -185,7 +185,10 @@ img {
   align-items: center; }
   .projects .project-heading {
     text-align: center;
-    padding: 2rem 0; }
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
     .projects .project-heading .heading {
       font-size: 4rem;
       color: #fff; }
@@ -194,7 +197,8 @@ img {
     .projects .project-heading .heading-underline {
       height: 2px;
       background: #fff;
-      text-align: center; }
+      text-align: center;
+      width: 8rem; }
   .projects .projects-container {
     width: 100%;
     max-width: 120rem;
@@ -222,44 +226,67 @@ img {
       color: #fff; }
 
 .contact {
-  padding-bottom: 2rem; }
-  .contact .container .about-heading {
-    color: #414141; }
-    .contact .container .about-heading .heading-underline {
-      background: #414141; }
-  .contact .container .text-fields {
-    display: grid;
-    grid-template-areas: "name" "subject" "email" "phone" "message";
-    grid-gap: 2rem;
-    margin-bottom: 2rem; }
-    .contact .container .text-fields .name-input {
-      grid-area: name; }
-    .contact .container .text-fields .email-input {
-      grid-area: email; }
-    .contact .container .text-fields .subject-input {
-      grid-area: subject; }
-    .contact .container .text-fields .phone-input {
-      grid-area: phone; }
-    .contact .container .text-fields .message-input {
-      grid-area: message;
-      height: 10rem; }
-    .contact .container .text-fields .text-input {
-      padding: 0.5rem 1.5rem; }
-      .contact .container .text-fields .text-input:focus {
-        outline: none; }
-    .contact .container .text-fields .span-filter {
-      padding: 2rem 0; }
-  .contact .container button[type="submit"] {
-    width: 25%;
-    padding: 0.5rem 0;
-    font-size: 1.4rem;
-    background: #08ABF2;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out; }
-    .contact .container button[type="submit"]:hover {
-      background: #12CFC2; }
+  background: #333333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+  .contact .contact-heading {
+    text-align: center;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contact .contact-heading .heading {
+      font-size: 4rem;
+      color: #fff; }
+      .contact .contact-heading .heading span {
+        color: #08ABF2; }
+    .contact .contact-heading .heading-underline {
+      height: 2px;
+      background: #fff;
+      text-align: center;
+      width: 8rem; }
+  .contact form {
+    width: 100%;
+    max-width: 120rem;
+    padding: 0 1.5rem;
+    margin: 0 auto; }
+    .contact form .text-fields {
+      display: grid;
+      grid-template-areas: "name" "subject" "email" "phone" "message";
+      grid-gap: 2rem;
+      margin-bottom: 2rem; }
+      .contact form .text-fields .name-input {
+        grid-area: name; }
+      .contact form .text-fields .email-input {
+        grid-area: email; }
+      .contact form .text-fields .subject-input {
+        grid-area: subject; }
+      .contact form .text-fields .phone-input {
+        grid-area: phone; }
+      .contact form .text-fields .message-input {
+        grid-area: message;
+        height: 10rem; }
+      .contact form .text-fields .text-input {
+        padding: 0.5rem 1.5rem; }
+        .contact form .text-fields .text-input:focus {
+          outline: none; }
+      .contact form .text-fields .span-filter {
+        padding: 2rem 0; }
+    .contact form button[type="submit"] {
+      width: 25%;
+      padding: 0.5rem 0;
+      font-size: 1.4rem;
+      background: #08ABF2;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out; }
+      .contact form button[type="submit"]:hover {
+        background: #12CFC2; }
 
 .main-footer {
   padding: 2rem 0;
@@ -280,7 +307,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .showcase .content h1 {
-    font-size: 6rem; }
+    font-size: 8rem; }
   .showcase .content h3 {
     font-size: 3rem; }
   .showcase .content .social .icon {
