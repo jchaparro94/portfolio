@@ -19,6 +19,10 @@
       }
     }
   }
+
+  .projects {
+    height: 900px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -27,7 +31,7 @@
   .showcase {
     .content {
       h1 {
-        font-size: 8rem;
+        font-size: 10rem;
       }
 
       h3 {
@@ -42,9 +46,27 @@
     }
   }
 
+  // .top-menu {
+
+  //   .hamburger-menu {
+  //     display: none;
+  //   }
+  // }
+
+  // .nav-list {
+  //   position: inherit;
+  //   width: initial;
+  //   height: initial;
+  //   background-color: transparent;
+  //   flex-direction: row;
+  //   justify-content: initial;
+  //   opacity: 1;
+  //   transform: scale(1);
+  // }
+
   // Contact 
   .contact {
-    .container {
+    form {
       .text-fields {
         grid-template-areas:
           'name subject'
