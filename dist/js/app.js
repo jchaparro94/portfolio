@@ -10,9 +10,3 @@ hamburgerMenu.addEventListener('click', function () {
   timesButton.classList.toggle('show');
   burger.classList.toggle('hide');
 });
-
-navLink.addEventListener('click', function () {
-  navList.classList.toggle('menu-open');
-  timesButton.classList.toggle('show');
-  burger.classList.toggle('hide');
-});
